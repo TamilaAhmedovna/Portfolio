@@ -1,0 +1,178 @@
+vendor-prefixes(select)
+  -webkit-user-select select
+  -moz-user-select select
+  -ms-user-select select
+  user-select select
+
+main_color1 = #4d4d4d
+main_color2 = ivory
+
+body
+  background-color main_color2
+  vendor-prefixes(none)
+
+
+//  Slider
+
+.slider
+  padding 0
+
+images_style(url_way)
+  width 100%
+  height 100%
+  background url_way
+  background-repeat no-repeat
+  background-size cover
+  background-position center center
+
+.image_0
+  images_style(url("../images/EnergyConservationCulture.jpg"))
+
+.image_1
+  images_style(url("../images/thinkstockphotos-492298023-6318x2649.jpg"))
+
+.image_2
+  images_style(url("../images/Ideas-of-Business-website.jpg"))
+
+.image_3
+  images_style(url("../images/201093.jpg"))
+
+
+// Menu
+
+.all_options
+  position absolute
+  top 0
+  width 100%
+  padding-top 50px
+
+.menuMain
+  padding 0 50px
+  position relative
+
+.header
+  text-align center
+  height 100px
+  color main_color2
+  background-color main_color1
+  border 2px main_color1
+  border-top-left-radius 10px
+  border-top-right-radius 10px
+
+.name
+  font-size 35px
+
+.whatIsIt
+  font-weight bold
+  font-size 22px
+
+.dropdown
+  background-color main_color2
+  padding 3px 0
+
+.dropdown-toggle
+  width 100%
+  height inherit
+  border none
+  background-color main_color2
+  font-size 30px
+
+.dropdown-menu
+  background-color transparent
+  width 100%
+  text-align center
+  border none
+  .divider
+    height 0
+  li
+    a
+      color main_color1
+      padding 0
+      text-shadow: 0px 0px 10px rgba(255,255,255,0.7)
+      &:hover
+        background-color transparent
+
+.list_item
+  font-size 22px
+  font-weight 600
+  padding 10px 0
+  display inline-block
+  transition all 0.5s
+  &:hover
+    color #791010
+  &:after
+    content ""
+    display block
+    position relative
+    z-index 200
+    margin auto
+    width 100%
+    border-bottom 3px solid
+    bottom .15em
+  &:hover:after
+    width 0
+    //border-bottom-width 1px
+    transition all 0.5s
+
+a
+  color main_color1
+  cursor pointer
+
+.item-menu
+  width 100%
+  height 100%
+  //padding 8px
+  background-color main_color2
+  border solid 3px main_color1
+  border-radius 8px
+  &:hover
+    background-color rgba(121, 16, 16, 0.9)
+    transition background-color 0.3s
+
+
+// Footer
+
+.footer
+  width 100%
+  height 100px
+  position fixed
+  bottom 0
+  background: rgb(141, 77, 77);
+  background: -webkit-linear-gradient(0deg, rgb(141, 77, 77) 0%, rgb(255, 255, 240) 100%);
+  background: -o-linear-gradient(0deg, rgb(141, 77, 77) 0%, rgb(255, 255, 240) 100%);
+  background: -ms-linear-gradient(0deg, rgb(141, 77, 77) 0%, rgb(255, 255, 240) 100%);
+  background: linear-gradient(0deg, rgb(141, 77, 77) 0%, rgb(255, 255, 240) 100%)
+
+.links
+  background-color transparent
+  width 200px
+  list-style none
+  text-align justify
+  text-align-last justify
+  padding 0 10px
+  margin 0
+  position absolute
+  right 10%
+  top 50%
+  transform translateY(-50%)
+
+.vk,
+.in,
+.git
+  display inline-block
+  outline none
+  font-size 40px
+  //text-align left
+  line-height normal
+  padding 5px
+  background-color: #900600;
+  background radial-gradient(rgba(255, 255, 240, 0.9) -50%, rgb(144, 6, 0))
+  border-radius: 8px;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  a
+    text-shadow: 0px 0px 10px rgba(255,255,255,0.7)
+    color #303030
+
+
